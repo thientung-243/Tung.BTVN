@@ -10,4 +10,5 @@ import Foundation
 
 //kiemTraNam()
 //bai4()
-bai5()
+//bai5()
+//thoigian()
