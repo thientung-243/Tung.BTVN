@@ -24,6 +24,24 @@ func kiemTraNam()
         print("Nam \(nam) khong la nam nhuan")
     }
 }
+//lam lai bai nam nhuan
+func namNhuan()
+{
+    var nam:Int
+    repeat
+    {
+        print("Nhap nam: ")
+        nam = Int(readLine()!)!
+    }
+    while nam < 0
+    if (nam % 4 == 0 && nam % 100 != 0) || nam % 400 == 0
+    {
+        print("Nam \(nam) la nam nhuan")
+    }
+    else{
+        print("Nam \(nam) khong nhuan")
+    }
+}
 func bai4()
 {
     print("Nhap gio ")
@@ -112,4 +130,26 @@ func thoigian(){
     }else{
         print("Thời điểm sau \(x) giây là: \(gio):\(phut):\(giay)")
     }
+}
+
+func congGiay()
+{
+    print("Nhap gio: ")
+    var hour = Int(readLine()!)!
+    print("Nhap phut: ")
+    var min = Int(readLine()!)!
+    print("Nhap giay: ")
+    var sec = Int(readLine()!)!
+    print("Nhap so giay cong them: ")
+    var addSec = Int(readLine()!)!
+    addSec += hour*3600 + min*60 + sec 
+    hour = addSec / 3600
+    addSec = addSec - hour*3600
+    if( hour > 23 )
+    {
+        hour -= 24
+    }
+    min = addSec / 60
+    sec  = addSec % 60
+    print("Sau khi cong: \(hour) gio \(min) phut \(sec) giay")
 }

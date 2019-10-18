@@ -12,3 +12,5 @@ import Foundation
 //bai4()
 //bai5()
 //thoigian()
+congGiay()
+//namNhuan()
