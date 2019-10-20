@@ -10,7 +10,7 @@ import Foundation
 
 func bai3()
 {
-    var arr:[Int] = [1,5,2,148,148,-4,30,30,30]
+    let arr:[Int] = [1,5,2,148,148,-4,30,30,30]
     var max = arr[0]
     var max2 = arr[0]
     for i in 1..<arr.count
@@ -31,7 +31,7 @@ func bai3()
 }
 func bai4()
 {
-    var arr:[Int] = [3,2,5,4,2,3,231,123,5]
+    let arr:[Int] = [3,2,5,4,2,3,231,123,5]
     for i in 0..<arr.count
     {
         if arr[i] % 2 == 1
@@ -77,7 +77,7 @@ func bai5()
 func daonguoc()
 {
     print("Nhap chuoi ")
-    var sString = String(readLine()!)
+    let sString = String(readLine()!)
     var result = ""
     for i in sString
     {
@@ -91,7 +91,7 @@ func daonguoc()
 }
 func bai6()
 {
-    var arr: [Float] = [1,2,3,4,5,-2,-9,2.4]
+    let arr: [Float] = [1,2,3,4,5,-2,-9,2.4]
     var min = arr[0]
     var max = arr[0]
     var tong:Float = 0
@@ -217,15 +217,16 @@ func timsoMax2()
         print("Nhap n= ")
         n = Int(readLine()!)!
     }
-    while n > 10000
-    var a = n / 10000
-    var b = (n - a*10000) / 1000
-    var c = (n - a*10000 - b*1000) / 100
-    var d = (n - a*10000 - b*1000 - c*100) / 10
-    var e = n % 10
+    while n > 10000 || n < 0
+    let a, b, c, d, e: Int
+    a = n / 10000
+    b = (n - a*10000) / 1000
+    c = (n - a*10000 - b*1000) / 100
+    d = (n - a*10000 - b*1000 - c*100) / 10
+    e = n % 10
     var m = a
     let arr = [a, b, c, d, e]
-    var v = max(a, b, c, d, e)
+    let v = max(a, b, c, d, e)
     for i in 0..<arr.count
     {
         if arr[i] < v && arr[i] > m
@@ -238,8 +239,8 @@ func timsoMax2()
 
 func catChuoi()
 {
-    var string = readLine()!
-    var arrString = string.components(separatedBy: ",")
+    let string = readLine()!
+    let arrString = string.components(separatedBy: ",")
     var arr:[Int] = []
     for i in 0..<arrString.count
     {
@@ -250,8 +251,8 @@ func catChuoi()
 }
 func nhapMang()
 {
-    var string = readLine()!
-    var arrString = string.components(separatedBy: " ")
+    let string = readLine()!
+    let arrString = string.components(separatedBy: " ")
     var arr:[Int] = []
     for i in 0..<arrString.count
     {
@@ -280,7 +281,7 @@ func timUoc()
 func hoTen()
 {
     print("Nhap ten: ")
-    var name = String(readLine()!)
+    let name = String(readLine()!)
     var ho:String = ""
     var ten:String = ""
     for i in name
@@ -305,7 +306,7 @@ func hoTen()
             break
         }
     }
-    var hoten = ho + " " + ten
+    let hoten = ho + " " + ten
     print(hoten)
     
 }

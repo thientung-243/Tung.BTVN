@@ -21,5 +21,5 @@ import Foundation
 //nhapMang()
 //timUoc()
 //dapAn()
-//soHoanHao()
-hoTen()
+soHoanHao()
+//hoTen()
