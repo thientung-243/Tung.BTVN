@@ -35,4 +35,25 @@ func game()
     }
 }
 
-
+//Cach 2
+func gameRandom()
+{
+    let random = Int.random(in: 0...100)
+       print(random)
+       
+       func check(){
+           print("Nhập n: ")
+           let n = Int(readLine()!)!
+           
+           if n < random {
+               print("Bé quá")
+               check()
+           } else if n > random{
+               print("Lớn quá")
+               check()
+           } else {
+               print("Chúc mừng")
+           }
+       }
+       check()
+}
