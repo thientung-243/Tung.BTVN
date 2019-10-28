@@ -82,9 +82,13 @@ func bai3()
 func bai4()
 {
     print("Nhap so km: ")
-    let s = Int(readLine()!)!
-    var price = 5000
-    if s <= 31
+    let s = Float(readLine()!)!
+    var price:Float = 5000
+    if s < 1
+    {
+        price += 0
+    }
+    else if s <= 31
     {
         price += (s-1) * 4000
     }
