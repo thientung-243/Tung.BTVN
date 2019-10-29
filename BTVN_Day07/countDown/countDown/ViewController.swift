@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     
     var timer:Timer!
     
-    var count = 30
+    var count:Float = 30
     
     
     
@@ -44,6 +44,7 @@ class ViewController: UIViewController {
 
     @IBAction func pauseButton(_ sender: Any) {
         timer.invalidate()
+
     }
     
     
@@ -55,14 +56,14 @@ class ViewController: UIViewController {
     
     func countdown()
     {
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(runTime), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(runTime), userInfo: nil, repeats: true)
    
     }
     @objc func runTime()
        {
-           count -= 1
+        count -= 0.1
            numCount.text = String(count)
-           if count < 1
+           if count <= 0
            {
                timer.invalidate()
            }

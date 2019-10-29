@@ -17,6 +17,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        priceLabel.layer.masksToBounds = true
+        priceLabel.layer.cornerRadius = 20.0
         
         numTextField.keyboardType = .numberPad
         

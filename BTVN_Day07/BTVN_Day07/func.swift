@@ -155,23 +155,23 @@ func bai6()
     
 }
 
-//func quickSort(arr: [Int], lo: Int, hi: Int)
-//{
-//    var head = lo
-//    var last = hi
-//    var mid = (lo+hi) / 2
-//    while head < last {
-//        while arr[head] < arr[mid]
-//        {
-//            head += 1
-//        }
-//        while arr[last] > arr[mid]
-//        {
-//            last -= 1
-//        }
-//        swap(arr[last], arr[head])
-//    }
-//    quickSort(arr: arr, lo: mid, hi: hi)
-//    quickSort(arr: arr, lo: lo, hi: mid)
-//
-//}
+func quickSort(arr: [Int], lo: Int, hi: Int)
+{
+    var head = lo
+    var last = hi
+    var mid = (lo+hi) / 2
+    while head < last {
+        while arr[head] < arr[mid]
+        {
+            head += 1
+        }
+        while arr[last] > arr[mid]
+        {
+            last -= 1
+        }
+        swap(arr[last], arr[head])
+    }
+    quickSort(arr: arr, lo: mid, hi: hi)
+    quickSort(arr: arr, lo: lo, hi: mid)
+
+}
