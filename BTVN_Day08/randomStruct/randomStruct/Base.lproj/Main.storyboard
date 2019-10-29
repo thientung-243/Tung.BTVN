@@ -35,6 +35,9 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="Press:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tll-5u-6eo"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -45,7 +48,7 @@
                     </view>
                     <connections>
                         <outlet property="nameImageLabel" destination="Omn-3r-aPd" id="jTX-11-ixZ"/>
-                        <outlet property="picImageView" destination="ZgT-ab-FYF" id="o5J-Fg-iM6"/>
+                        <outlet property="picImageName" destination="ZgT-ab-FYF" id="rEZ-10-D4X"/>
                         <outlet property="pressRandom" destination="7Kb-op-es1" id="sP8-nm-xz9"/>
                     </connections>
                 </viewController>
