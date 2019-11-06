@@ -155,23 +155,30 @@ func bai6()
     
 }
 
-func quickSort(arr: [Int], lo: Int, hi: Int)
+func quickSort(arr: [Int], lo: Int, hi: Int) -> [Int]
 {
+    var arr1 = arr
     var head = lo
     var last = hi
     var mid = (lo+hi) / 2
     while head < last {
-        while arr[head] < arr[mid]
+        print(head, last)
+        while arr1[head] < arr1[mid]
         {
             head += 1
         }
-        while arr[last] > arr[mid]
+        while arr1[last] > arr1[mid]
         {
             last -= 1
         }
-        swap(arr[last], arr[head])
+        let tg = arr1[head]
+        arr1[head] = arr1[last]
+        arr1[last] = tg
+        head += 1
+        last -= 1
     }
-    quickSort(arr: arr, lo: mid, hi: hi)
-    quickSort(arr: arr, lo: lo, hi: mid)
-
+    
+    quickSort(arr: arr1, lo: mid, hi: hi)
+    quickSort(arr: arr1, lo: lo, hi: mid)
+    return arr1
 }

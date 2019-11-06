@@ -8,4 +8,10 @@
 
 import Foundation
 
-bai6()
+//bai6()
+var arr = [1, 3, 5, 2 , -2, -5, -7]
+
+print("Mang sap xep: ")
+var arr2 = quickSort(arr: arr, lo: 0, hi: arr.count-1)
+
+print("arr2 = \(arr2) ")
