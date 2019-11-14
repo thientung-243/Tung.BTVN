@@ -38,11 +38,17 @@ class CounterView: UIView {
         let startAngle: CGFloat = 3 * .pi/4
         let endAngle: CGFloat = .pi/4
         
-        let path = UIBezierPath(arcCenter: center, radius: radius/2 - Constants.arcWidth/2, startAngle: startAngle, endAngle: endAngle, clockwise: true)
+        let path = UIBezierPath(arcCenter: center, radius: radius/2 - Constants.arcWidth/2, startAngle: startAngle, endAngle: endAngle, clockwise: false)
         
         path.lineWidth = Constants.arcWidth
         counterColor.setStroke()
         path.stroke()
+        
+        let path3 = UIBezierPath(arcCenter: center, radius: radius/2 - Constants.arcWidth/2, startAngle: startAngle, endAngle: endAngle, clockwise: true)
+        
+        path3.lineWidth = Constants.arcWidth
+        UIColor.systemPink.setStroke()
+        path3.stroke()
         
         //1
         let angleDifference: CGFloat = 2 * .pi - startAngle + endAngle
