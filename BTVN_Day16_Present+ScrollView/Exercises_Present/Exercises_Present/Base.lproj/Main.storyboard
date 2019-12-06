@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Exercises_Present" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ảnh chụp Màn hình 2019-12-06 lúc 11.36.35" translatesAutoresizingMaskIntoConstraints="NO" id="OPD-Ac-cKX">
+                                <rect key="frame" x="42" y="35" width="291" height="162"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DlU-15-p8u">
+                                <rect key="frame" x="54.5" y="546" width="266" height="48"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Đăng ký">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="c0M-Fo-kac">
+                                <rect key="frame" x="54.5" y="262" width="266" height="244"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i8I-aj-j6A">
+                                        <rect key="frame" x="0.0" y="0.0" width="266" height="52"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Họ và tên" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3zx-5d-Ktp">
+                                                <rect key="frame" x="44" y="8" width="214" height="36"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-user-96" translatesAutoresizingMaskIntoConstraints="NO" id="5ae-zW-vg9">
+                                                <rect key="frame" x="6" y="11" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="urc-iI-wFL">
+                                        <rect key="frame" x="0.0" y="64" width="266" height="52"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Số điện thoại" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KnE-hs-HHe">
+                                                <rect key="frame" x="44" y="8" width="214" height="36"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-android-96" translatesAutoresizingMaskIntoConstraints="NO" id="abL-RT-1Rh">
+                                                <rect key="frame" x="4" y="11" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B2U-hn-Dn0">
+                                        <rect key="frame" x="0.0" y="128" width="266" height="52"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mật khẩu" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mvm-UI-10w">
+                                                <rect key="frame" x="44" y="8" width="214" height="36"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lock" translatesAutoresizingMaskIntoConstraints="NO" id="gGV-u2-c40">
+                                                <rect key="frame" x="6" y="11" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ib-bZ-LHE">
+                                        <rect key="frame" x="0.0" y="192" width="266" height="52"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nhập lại mật khẩu" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t3o-jC-UpZ">
+                                                <rect key="frame" x="44" y="8" width="214" height="36"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lock" translatesAutoresizingMaskIntoConstraints="NO" id="Kgb-tW-uEe">
+                                                <rect key="frame" x="8" y="11" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="B2U-hn-Dn0" firstAttribute="top" secondItem="c0M-Fo-kac" secondAttribute="top" constant="128" id="Qlg-eY-6QC"/>
+                                    <constraint firstItem="5ib-bZ-LHE" firstAttribute="top" secondItem="c0M-Fo-kac" secondAttribute="top" constant="192" id="qmY-7g-iGM"/>
+                                    <constraint firstItem="urc-iI-wFL" firstAttribute="top" secondItem="c0M-Fo-kac" secondAttribute="top" constant="64" id="w60-9L-7h1"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đã có tài khoản?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6CU-cb-79q">
+                                <rect key="frame" x="81" y="599" width="127" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4d-Fa-w6h">
+                                <rect key="frame" x="216" y="593.5" width="84" height="32"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Đăng nhập">
+                                    <color key="titleColor" red="0.78039215689999997" green="0.63931015020000004" blue="0.45077581849999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wHB-ps-a4a" kind="presentation" modalPresentationStyle="fullScreen" id="WQx-IP-gcc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6CU-cb-79q" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="-43" id="1df-l7-rZv"/>
+                            <constraint firstItem="OPD-Ac-cKX" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.242879" id="2Qx-bD-8Vk"/>
+                            <constraint firstItem="c0M-Fo-kac" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.709333" id="6Zp-OP-owG"/>
+                            <constraint firstItem="x4d-Fa-w6h" firstAttribute="centerY" secondItem="6CU-cb-79q" secondAttribute="centerY" id="7wD-bv-gvR"/>
+                            <constraint firstItem="c0M-Fo-kac" firstAttribute="top" secondItem="OPD-Ac-cKX" secondAttribute="bottom" constant="65" id="FIk-Vg-a7A"/>
+                            <constraint firstItem="c0M-Fo-kac" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="K86-rX-V5o"/>
+                            <constraint firstItem="OPD-Ac-cKX" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.776" id="Szo-Hx-mLq"/>
+                            <constraint firstItem="x4d-Fa-w6h" firstAttribute="leading" secondItem="6CU-cb-79q" secondAttribute="trailing" constant="8" id="a5Y-zy-gGZ"/>
+                            <constraint firstItem="DlU-15-p8u" firstAttribute="top" secondItem="c0M-Fo-kac" secondAttribute="bottom" constant="40" id="eWO-yz-FO2"/>
+                            <constraint firstItem="6CU-cb-79q" firstAttribute="top" secondItem="DlU-15-p8u" secondAttribute="bottom" constant="5" id="f6J-ZW-eKo"/>
+                            <constraint firstItem="c0M-Fo-kac" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.365817" id="nzL-hF-FWD"/>
+                            <constraint firstItem="DlU-15-p8u" firstAttribute="trailing" secondItem="c0M-Fo-kac" secondAttribute="trailing" id="umi-Ap-7Tl"/>
+                            <constraint firstItem="DlU-15-p8u" firstAttribute="leading" secondItem="c0M-Fo-kac" secondAttribute="leading" id="vy2-Xt-Q2T"/>
+                            <constraint firstItem="OPD-Ac-cKX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="wda-1J-sKE"/>
+                            <constraint firstItem="OPD-Ac-cKX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="zBq-4U-00G"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="120.98950524737631"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="RM4-Vj-JYu">
+            <objects>
+                <viewController id="wHB-ps-a4a" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hfq-Ee-riB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ảnh chụp Màn hình 2019-12-06 lúc 11.36.35" translatesAutoresizingMaskIntoConstraints="NO" id="2gc-L7-74i">
+                                <rect key="frame" x="42" y="35" width="291" height="160"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RGe-6R-65w">
+                                <rect key="frame" x="42" y="440" width="291" height="60"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Đăng nhập">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="3dQ-E4-8yY" kind="presentation" modalPresentationStyle="fullScreen" id="70H-GQ-yaO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chưa có tài khoản?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Xh-bb-3rd">
+                                <rect key="frame" x="61.5" y="510" width="146.5" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4vJ-K0-QbK">
+                                <rect key="frame" x="42" y="245" width="291" height="50"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Số điện thoại" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="meC-VN-QD7">
+                                        <rect key="frame" x="50" y="0.0" width="241" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-android-96" translatesAutoresizingMaskIntoConstraints="NO" id="CRm-hy-q8r">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="5DR-00-1YC"/>
+                                            <constraint firstAttribute="width" constant="30" id="Dlv-QO-EM4"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="CRm-hy-q8r" firstAttribute="width" secondItem="4vJ-K0-QbK" secondAttribute="height" id="J0Z-1g-CR6"/>
+                                    <constraint firstItem="meC-VN-QD7" firstAttribute="top" secondItem="4vJ-K0-QbK" secondAttribute="top" id="KRA-q7-PG3"/>
+                                    <constraint firstAttribute="bottom" secondItem="meC-VN-QD7" secondAttribute="bottom" id="MC1-50-Lmh"/>
+                                    <constraint firstAttribute="trailing" secondItem="meC-VN-QD7" secondAttribute="trailing" id="XpY-fi-E5P"/>
+                                    <constraint firstItem="meC-VN-QD7" firstAttribute="leading" secondItem="CRm-hy-q8r" secondAttribute="trailing" id="cc1-hq-Hwn"/>
+                                    <constraint firstItem="CRm-hy-q8r" firstAttribute="leading" secondItem="4vJ-K0-QbK" secondAttribute="leading" id="n7i-Xq-KkD"/>
+                                    <constraint firstItem="CRm-hy-q8r" firstAttribute="top" secondItem="4vJ-K0-QbK" secondAttribute="top" id="vRi-rN-QdO"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AG0-7E-gRk">
+                                <rect key="frame" x="42" y="320" width="291" height="50"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mật khẩu" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lbH-xO-F05">
+                                        <rect key="frame" x="50" y="0.0" width="241" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="IJR-1y-i63"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock" translatesAutoresizingMaskIntoConstraints="NO" id="CFL-lg-Rq9">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="lbH-xO-F05" secondAttribute="trailing" id="214-QL-EcT"/>
+                                    <constraint firstItem="CFL-lg-Rq9" firstAttribute="height" secondItem="AG0-7E-gRk" secondAttribute="height" id="618-AN-H1c"/>
+                                    <constraint firstItem="CFL-lg-Rq9" firstAttribute="leading" secondItem="AG0-7E-gRk" secondAttribute="leading" id="Qki-4f-Ajb"/>
+                                    <constraint firstItem="CFL-lg-Rq9" firstAttribute="width" secondItem="AG0-7E-gRk" secondAttribute="height" id="Srg-eT-7qK"/>
+                                    <constraint firstItem="CFL-lg-Rq9" firstAttribute="top" secondItem="AG0-7E-gRk" secondAttribute="top" id="XgZ-8X-goC"/>
+                                    <constraint firstItem="lbH-xO-F05" firstAttribute="leading" secondItem="CFL-lg-Rq9" secondAttribute="trailing" id="gdi-5z-fHi"/>
+                                    <constraint firstAttribute="bottom" secondItem="lbH-xO-F05" secondAttribute="bottom" id="lj9-nJ-hFh"/>
+                                    <constraint firstItem="lbH-xO-F05" firstAttribute="top" secondItem="AG0-7E-gRk" secondAttribute="top" id="ySE-wa-s6k"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbu-8o-jWH">
+                                <rect key="frame" x="216" y="510" width="96.5" height="32"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Đăng kí">
+                                    <color key="titleColor" red="0.78039215689999997" green="0.63931015020000004" blue="0.45077581849999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="0d8-RN-lGA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="AG0-7E-gRk" firstAttribute="leading" secondItem="4vJ-K0-QbK" secondAttribute="leading" id="1Qj-IT-8Rq"/>
+                            <constraint firstItem="RGe-6R-65w" firstAttribute="top" secondItem="AG0-7E-gRk" secondAttribute="bottom" constant="70" id="1hJ-wW-kgD"/>
+                            <constraint firstItem="2gc-L7-74i" firstAttribute="centerX" secondItem="Quf-Ih-VOg" secondAttribute="centerX" id="2lE-gg-2KI"/>
+                            <constraint firstItem="4vJ-K0-QbK" firstAttribute="top" secondItem="2gc-L7-74i" secondAttribute="bottom" constant="50" id="2yT-he-6sz"/>
+                            <constraint firstItem="AG0-7E-gRk" firstAttribute="height" secondItem="4vJ-K0-QbK" secondAttribute="height" id="60l-B3-e4c"/>
+                            <constraint firstItem="RGe-6R-65w" firstAttribute="height" secondItem="Hfq-Ee-riB" secondAttribute="height" multiplier="0.09" id="9AX-Wg-96r"/>
+                            <constraint firstItem="nbu-8o-jWH" firstAttribute="height" secondItem="1Xh-bb-3rd" secondAttribute="height" id="Ahb-VG-le5"/>
+                            <constraint firstItem="RGe-6R-65w" firstAttribute="trailing" secondItem="2gc-L7-74i" secondAttribute="trailing" id="DYM-Ff-dCz"/>
+                            <constraint firstItem="4vJ-K0-QbK" firstAttribute="trailing" secondItem="2gc-L7-74i" secondAttribute="trailing" id="EEt-Ij-dql"/>
+                            <constraint firstItem="4vJ-K0-QbK" firstAttribute="centerX" secondItem="2gc-L7-74i" secondAttribute="centerX" id="ElI-Rq-t2c"/>
+                            <constraint firstItem="nbu-8o-jWH" firstAttribute="width" secondItem="1Xh-bb-3rd" secondAttribute="width" multiplier="0.661417" id="Fvf-sv-pgW"/>
+                            <constraint firstItem="RGe-6R-65w" firstAttribute="leading" secondItem="2gc-L7-74i" secondAttribute="leading" id="HWG-X9-tdL"/>
+                            <constraint firstItem="4vJ-K0-QbK" firstAttribute="leading" secondItem="2gc-L7-74i" secondAttribute="leading" id="MHO-HD-66j"/>
+                            <constraint firstItem="2gc-L7-74i" firstAttribute="top" secondItem="Quf-Ih-VOg" secondAttribute="top" constant="35" id="NGu-RZ-Nvy"/>
+                            <constraint firstItem="4vJ-K0-QbK" firstAttribute="height" secondItem="Hfq-Ee-riB" secondAttribute="height" multiplier="0.0749625" id="Qq6-M8-0pV"/>
+                            <constraint firstItem="nbu-8o-jWH" firstAttribute="bottom" secondItem="1Xh-bb-3rd" secondAttribute="bottom" id="R08-W8-Yk3"/>
+                            <constraint firstItem="2gc-L7-74i" firstAttribute="height" secondItem="Hfq-Ee-riB" secondAttribute="height" multiplier="0.24" id="R4F-mR-o4g"/>
+                            <constraint firstItem="nbu-8o-jWH" firstAttribute="leading" secondItem="1Xh-bb-3rd" secondAttribute="trailing" constant="8" id="dKl-gI-cJT"/>
+                            <constraint firstItem="nbu-8o-jWH" firstAttribute="top" secondItem="1Xh-bb-3rd" secondAttribute="top" id="fh9-2H-0tw"/>
+                            <constraint firstItem="AG0-7E-gRk" firstAttribute="top" secondItem="4vJ-K0-QbK" secondAttribute="bottom" constant="25" id="ftX-X1-1SX"/>
+                            <constraint firstItem="AG0-7E-gRk" firstAttribute="centerX" secondItem="4vJ-K0-QbK" secondAttribute="centerX" id="nTR-C7-1j2"/>
+                            <constraint firstItem="AG0-7E-gRk" firstAttribute="trailing" secondItem="4vJ-K0-QbK" secondAttribute="trailing" id="pdv-w5-LDL"/>
+                            <constraint firstItem="2gc-L7-74i" firstAttribute="width" secondItem="Hfq-Ee-riB" secondAttribute="width" multiplier="0.776" id="rXf-w1-Dph"/>
+                            <constraint firstItem="1Xh-bb-3rd" firstAttribute="centerX" secondItem="Quf-Ih-VOg" secondAttribute="centerX" constant="-53" id="rdY-XK-msS"/>
+                            <constraint firstItem="AG0-7E-gRk" firstAttribute="width" secondItem="4vJ-K0-QbK" secondAttribute="width" id="vJp-oa-I09"/>
+                            <constraint firstItem="1Xh-bb-3rd" firstAttribute="top" secondItem="RGe-6R-65w" secondAttribute="bottom" constant="10" id="zNT-cw-Wwn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Quf-Ih-VOg"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bj5-cO-CYt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jii-Zi-sje" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1000.8" y="120.98950524737631"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="mqE-hc-eN2">
+            <objects>
+                <viewController id="3dQ-E4-8yY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8H6-Xj-N2g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utM-uk-f5I">
+                                <rect key="frame" x="111" y="283" width="150" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <state key="normal" title="Đổi ảnh đại diện">
+                                    <color key="titleColor" red="0.78039215689999997" green="0.63931015020000004" blue="0.45077581849999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Họ và tên" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLr-su-xok">
+                                <rect key="frame" x="72" y="370" width="73" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CYk-Yv-QTS">
+                                <rect key="frame" x="72" y="399" width="231" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Số điện thoại" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bbg-Zj-9g1">
+                                <rect key="frame" x="71" y="451" width="100" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dXZ-81-4SP">
+                                <rect key="frame" x="71" y="480" width="231" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Địa chỉ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c96-dY-giK">
+                                <rect key="frame" x="71" y="538" width="52" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nDg-Ox-nfZ">
+                                <rect key="frame" x="71" y="567" width="231" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-user-96" translatesAutoresizingMaskIntoConstraints="NO" id="YgD-TE-Ehv">
+                                <rect key="frame" x="112" y="117" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fSc-WS-lzu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-menu-100" translatesAutoresizingMaskIntoConstraints="NO" id="7aW-lt-N1j">
+                                        <rect key="frame" x="8" y="0.0" width="65" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hồ sơ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YJ4-LH-IO7">
+                                        <rect key="frame" x="81" y="14" width="76" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DnH-mx-dTb">
+                                        <rect key="frame" x="272" y="12" width="95" height="41"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="Cập nhật">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="wHB-ps-a4a" kind="presentation" modalPresentationStyle="fullScreen" id="FXK-am-Si7"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="vmz-tN-Abm"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yJh-hL-VCr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1783.2" y="120.98950524737631"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Ảnh chụp Màn hình 2019-12-06 lúc 11.36.35" width="196" height="143"/>
+        <image name="icons8-android-96" width="96" height="96"/>
+        <image name="icons8-menu-100" width="100" height="100"/>
+        <image name="icons8-user-96" width="96" height="96"/>
+        <image name="lock" width="512" height="512"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="WQx-IP-gcc"/>
+    </inferredMetricsTieBreakers>
+</document>
