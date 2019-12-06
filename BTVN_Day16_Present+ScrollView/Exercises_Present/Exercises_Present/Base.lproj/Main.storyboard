@@ -361,7 +361,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yJh-hL-VCr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1783.2" y="120.98950524737631"/>
+            <point key="canvasLocation" x="1860" y="121"/>
         </scene>
     </scenes>
     <resources>
@@ -372,6 +372,6 @@
         <image name="lock" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="WQx-IP-gcc"/>
+        <segue reference="FXK-am-Si7"/>
     </inferredMetricsTieBreakers>
 </document>
