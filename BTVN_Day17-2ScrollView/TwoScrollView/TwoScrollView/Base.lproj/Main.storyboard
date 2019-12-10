@@ -22,6 +22,10 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="VtB-H4-X6s"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="tHu-gq-lbK"/>
                             </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Zbx-S7-uzN">
+                                <rect key="frame" x="167" y="185" width="39" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </pageControl>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rIj-o8-6Wp">
                                 <rect key="frame" x="0.0" y="257" width="375" height="410"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -36,6 +40,7 @@
                     <connections>
                         <outlet property="ScrollViewDoc" destination="rIj-o8-6Wp" id="kNM-Y4-Ti5"/>
                         <outlet property="ScrollViewNgang" destination="GAw-3s-GIW" id="fWo-Vs-bj3"/>
+                        <outlet property="pageControl" destination="Zbx-S7-uzN" id="ZQT-fX-2Yu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

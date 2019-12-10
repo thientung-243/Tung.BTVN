@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var ScrollViewNgang: UIScrollView!
     @IBOutlet weak var ScrollViewDoc: UIScrollView!
+    @IBOutlet weak var pageControl: UIPageControl!
     
     var screenWidth = UIScreen.main.bounds.size.width
     var screenHeight = UIScreen.main.bounds.size.height
@@ -25,6 +26,12 @@ class ViewController: UIViewController {
         
         createData()
         setupSlideScrollViewNgang(scrollName: scrollNgang)
+        pageControl.currentPage = 0
+        pageControl.numberOfPages = scrollNgang.count
+        pageControl.pageIndicatorTintColor = UIColor.white
+        pageControl.currentPageIndicatorTintColor = UIColor.systemPink
+        ScrollViewNgang.delegate = self as UIScrollViewDelegate
+        
         setupSlideScrollViewDoc(scrollName: scrollDoc)
         
     }
@@ -93,5 +100,12 @@ class ViewController: UIViewController {
     }
 
 
+}
+
+extension ViewController: UIScrollViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let pageIndex = round(scrollView.contentOffset.x/screenWidth)
+        pageControl.currentPage = Int(pageIndex)
+    }
 }
 
